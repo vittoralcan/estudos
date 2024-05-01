@@ -1,0 +1,19 @@
+.conteudo {
+    /*FORMATAÇÃO BORDAS*/
+    border: 1px solid red;
+
+    /*FORMATAÇÃO PADDING*/
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+    /*fFORMATAÇÃO MARGENS*/
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    /*FORMATAÇÃO TAMANHOS*/
+    width: 150px;
+}

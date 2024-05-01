@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <i class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Op1</a> </li>
+                <li><a href="#">Op2</a> </li>
+                <li><a href="#">Op3</a> </li>
+                <li><a href="#">Op4</a> </li>
+
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus ea, officia rem nisi quis aspernatur suscipit eveniet eius magnam quaerat? Incidunt officiis similique sequi modi laudantium mollitia optio consequuntur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, aut ratione in, eos voluptas veniam cupiditate non perferendis unde nobis nam recusandae deserunt culpa quia exercitationem atque iste. At, ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque amet officia ex, sed eum nam omnis neque animi sequi enim architecto velit deserunt ut tempore, asperiores cupiditate libero vitae autem.</p> <br> <br>
+
+            <h2>Testando Media Query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus ea, officia rem nisi quis aspernatur suscipit eveniet eius magnam quaerat? Incidunt officiis similique sequi modi laudantium mollitia optio consequuntur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, aut ratione in, eos voluptas veniam cupiditate non perferendis unde nobis nam recusandae deserunt culpa quia exercitationem atque iste. At, ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque amet officia ex, sed eum nam omnis neque animi sequi enim architecto velit deserunt ut tempore, asperiores cupiditate libero vitae autem.</p> <br> <br>
+
+            <h2>Testando Media Query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus ea, officia rem nisi quis aspernatur suscipit eveniet eius magnam quaerat? Incidunt officiis similique sequi modi laudantium mollitia optio consequuntur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, aut ratione in, eos voluptas veniam cupiditate non perferendis unde nobis nam recusandae deserunt culpa quia exercitationem atque iste. At, ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque amet officia ex, sed eum nam omnis neque animi sequi enim architecto velit deserunt ut tempore, asperiores cupiditate libero vitae autem.</p> <br> <br>
+
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth>= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } 
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+    
+</body>
+</html>
